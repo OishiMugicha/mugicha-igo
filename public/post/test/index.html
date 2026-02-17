@@ -1,21 +1,22 @@
 <!DOCTYPE html>
 <html lang="ja" dir="ltr">
-    <head>
-	<meta name="generator" content="Hugo 0.152.2"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="">
-<title>むぎちゃの囲碁道楽</title>
+    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="棋譜\r棋譜終わり\r">
+<title>Test</title>
 
-<link rel='canonical' href='http://localhost:1313/'>
+<link rel='canonical' href='http://localhost:1313/post/test/'>
 
-<link rel="stylesheet" href="/scss/style.min.12cc436ab5f8511a88ba664cf1ef0912660ff4b5b07ea9078eb9fd7832b1e898.css"><meta property='og:title' content="むぎちゃの囲碁道楽">
-<meta property='og:description' content="">
-<meta property='og:url' content='http://localhost:1313/'>
+<link rel="stylesheet" href="/scss/style.min.12cc436ab5f8511a88ba664cf1ef0912660ff4b5b07ea9078eb9fd7832b1e898.css"><meta property='og:title' content="Test">
+<meta property='og:description' content="棋譜\r棋譜終わり\r">
+<meta property='og:url' content='http://localhost:1313/post/test/'>
 <meta property='og:site_name' content='むぎちゃの囲碁道楽'>
-<meta property='og:type' content='website'><meta property='og:updated_time' content=' 2026-02-17T12:57:55&#43;09:00 '/>
-<meta name="twitter:title" content="むぎちゃの囲碁道楽">
-<meta name="twitter:description" content=""><link rel="alternate" type="application/rss&#43;xml" href="http://localhost:1313/index.xml">
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:published_time' content='2026-02-17T12:57:55&#43;09:00'/><meta property='article:modified_time' content='2026-02-17T12:57:55&#43;09:00'/>
+<meta name="twitter:title" content="Test">
+<meta name="twitter:description" content="棋譜\r棋譜終わり\r">
     </head>
-    <body class="">
+    <body class="
+    article-page
+    ">
     <script>
         (function() {
             const colorSchemeKey = 'StackColorScheme';
@@ -86,10 +87,8 @@
 
     
 
-            <main class="main full-width"><section class="article-list">
-        
-            
-<article class="">
+            <main class="main full-width">
+    <article class="main-article">
     <header class="article-header">
 
     <div class="article-details">
@@ -145,9 +144,95 @@
 </div>
 
 </header>
+
+    
+
+    <section class="article-content">
+    
+    
+    <h1 id="棋譜">棋譜
+</h1><link rel="stylesheet" href="/js/wgo/wgo.player.css">
+
+<div
+  class="wgo-player"
+  data-sgf="test"
+  style="width:100%; max-width:600px;">
+</div>
+
+<script src="/js/wgo/wgo.min.js"></script>
+<script src="/js/wgo/wgo.player.min.js"></script>
+
+<script>
+function initWgoPlayers() {
+
+  document.querySelectorAll(".wgo-player").forEach(function (elem) {
+
+    if (elem.dataset.loaded) return;
+    elem.dataset.loaded = true;
+
+    var sgfName = elem.dataset.sgf;
+
+    new WGo.BasicPlayer(elem, {
+      sgfFile: "/sgf/" + sgfName + ".sgf"
+    });
+
+  });
+}
+
+
+document.addEventListener("DOMContentLoaded", initWgoPlayers);
+
+
+document.addEventListener("pjax:complete", initWgoPlayers);
+</script>
+
+<h1 id="棋譜終わり">棋譜終わり
+</h1>
+</section>
+
+
+    <footer class="article-footer">
+    
+
+    </footer>
+
+
+    
 </article>
+
+    
+
+    
+
+     
+    
         
-    </section><footer class="site-footer">
+    <div class="disqus-container">
+    
+</div>
+
+<style>
+    .disqus-container {
+        background-color: var(--card-background);
+        border-radius: var(--card-border-radius);
+        box-shadow: var(--shadow-l1);
+        padding: var(--card-padding);
+    }
+</style>
+
+<script>
+    window.addEventListener('onColorSchemeChange', (e) => {
+        if (typeof DISQUS == 'object') {
+            DISQUS.reset({
+                reload: true
+            });
+        }
+    })
+</script>
+
+    
+
+    <footer class="site-footer">
     <section class="copyright">
         &copy; 
         
@@ -159,6 +244,38 @@
         Theme <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="4.0.0">Stack</a></b> designed by <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
     </section>
 </footer>
+
+
+    
+
+
+
+<script type="module">
+    import gallery from '\/ts\/gallery.js';
+
+    const articleContent = document.querySelector('.article-content');
+    const shouldLoad = articleContent && (articleContent.querySelectorAll('figure').length > 0 || articleContent.querySelectorAll('img.gallery-image').length > 0);
+    
+    if (shouldLoad) {
+        gallery(articleContent);
+
+        const PhotoSwipeLightbox = (await import("https:\/\/cdn.jsdelivr.net\/npm\/photoswipe@5.4.4\/dist\/photoswipe-lightbox.esm.min.js")).default;
+        const styleHref = "https:\/\/cdn.jsdelivr.net\/npm\/photoswipe@5.4.4\/dist\/photoswipe.css";
+
+        const styleTag = document.createElement('link');
+        styleTag.rel = 'stylesheet';
+        styleTag.href = styleHref;
+        document.head.appendChild(styleTag);
+
+        const lightbox = new PhotoSwipeLightbox({
+            gallerySelector: '.article-content',
+            childSelector: 'figure a.image-link',
+            pswpModule: () => import("https:\/\/cdn.jsdelivr.net\/npm\/photoswipe@5.4.4\/dist\/photoswipe.esm.min.js")
+        });
+        lightbox.init();
+    }
+</script>
+    
 
             </main>
         </div>

@@ -1,0 +1,34 @@
+<link rel="stylesheet" href="/js/wgo/wgo.player.css">
+
+<div
+  class="wgo-player"
+  data-sgf="{{ .Get 0 }}"
+  style="width:100%; max-width:600px;">
+</div>
+
+<script src="/js/wgo/wgo.min.js"></script>
+<script src="/js/wgo/wgo.player.min.js"></script>
+
+<script>
+function initWgoPlayers() {
+
+  document.querySelectorAll(".wgo-player").forEach(function (elem) {
+
+    if (elem.dataset.loaded) return;
+    elem.dataset.loaded = true;
+
+    var sgfName = elem.dataset.sgf;
+
+    new WGo.BasicPlayer(elem, {
+      sgfFile: "/sgf/" + sgfName + ".sgf"
+    });
+
+  });
+}
+
+// 初回ロード
+document.addEventListener("DOMContentLoaded", initWgoPlayers);
+
+// Stack テーマ PJAX
+document.addEventListener("pjax:complete", initWgoPlayers);
+</script>
