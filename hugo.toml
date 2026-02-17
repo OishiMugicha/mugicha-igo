@@ -2,3 +2,6 @@ baseURL = 'https://example.org/'
 languageCode = 'ja'
 title = 'むぎちゃの囲碁道楽'
 theme = 'stack'
+[caches]
+  [caches.images]
+    dir = ':cacheDir/images'
