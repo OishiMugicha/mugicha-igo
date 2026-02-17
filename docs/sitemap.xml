@@ -2,20 +2,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-<<<<<<< HEAD:docs/sitemap.xml
-    <loc>http://localhost:1313/mugicha-igo/post/</loc>
-    <lastmod>2026-02-17T12:57:55+09:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/mugicha-igo/post/test/</loc>
-    <lastmod>2026-02-17T12:57:55+09:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/mugicha-igo/</loc>
-    <lastmod>2026-02-17T12:57:55+09:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/mugicha-igo/categories/</loc>
-  </url><url>
-    <loc>http://localhost:1313/mugicha-igo/tags/</loc>
-=======
     <loc>https://oishimugicha.github.io/mugicha-igo/post/</loc>
     <lastmod>2026-02-17T12:57:55+09:00</lastmod>
   </url><url>
@@ -28,6 +14,5 @@
     <loc>https://oishimugicha.github.io/mugicha-igo/categories/</loc>
   </url><url>
     <loc>https://oishimugicha.github.io/mugicha-igo/tags/</loc>
->>>>>>> 5d34585ab3324d51b57875c8788567d0f5e79b49:public/sitemap.xml
   </url>
 </urlset>

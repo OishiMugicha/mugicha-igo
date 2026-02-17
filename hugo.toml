@@ -1,15 +1,5 @@
-<<<<<<< HEAD
 baseURL = 'https://oishimugicha.github.io/mugicha-igo/'
 languageCode = 'ja'
 title = 'むぎちゃの囲碁道楽'
 theme = 'stack'
 publishDir = "docs"
-=======
-baseURL = 'https://oishimugicha.github.io/mugicha-igo'
-languageCode = 'ja'
-title = 'むぎちゃの囲碁道楽'
-theme = 'stack'
-[caches]
-  [caches.images]
-    dir = ':cacheDir/images'
->>>>>>> 5d34585ab3324d51b57875c8788567d0f5e79b49
