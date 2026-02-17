@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="/js/wgo/wgo.player.css">
+<link rel="stylesheet" href="/mugicha-igo/js/wgo/wgo.player.css">
 
 <div
   class="wgo-player"
@@ -6,8 +6,8 @@
   style="width:100%; max-width:600px;">
 </div>
 
-<script src="/js/wgo/wgo.min.js"></script>
-<script src="/js/wgo/wgo.player.min.js"></script>
+<script src="/mugicha-igo/js/wgo/wgo.min.js"></script>
+<script src="/mugicha-igo/js/wgo/wgo.player.min.js"></script>
 
 <script>
 function initWgoPlayers() {
@@ -20,7 +20,7 @@ function initWgoPlayers() {
     var sgfName = elem.dataset.sgf;
 
     new WGo.BasicPlayer(elem, {
-      sgfFile: "/sgf/" + sgfName + ".sgf"
+      sgfFile: "/mugicha-igo/sgf/" + sgfName + ".sgf"
     });
 
   });
