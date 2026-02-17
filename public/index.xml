@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>むぎちゃの囲碁道楽</title>
-        <link>http://localhost:1313/</link>
+        <link>https://oishimugicha.github.io/mugicha-igo/</link>
         <description>Recent content on むぎちゃの囲碁道楽</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>ja</language>
-        <lastBuildDate>Tue, 17 Feb 2026 12:57:55 +0900</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Tue, 17 Feb 2026 12:57:55 +0900</lastBuildDate><atom:link href="https://oishimugicha.github.io/mugicha-igo/index.xml" rel="self" type="application/rss+xml" /><item>
             <title>Test</title>
-            <link>http://localhost:1313/post/test/</link>
+            <link>https://oishimugicha.github.io/mugicha-igo/post/test/</link>
             <pubDate>Tue, 17 Feb 2026 12:57:55 +0900</pubDate>
-            <guid>http://localhost:1313/post/test/</guid>
-            <description>&lt;h1 id=&#34;棋譜&#34;&gt;棋譜&#xD;&#xA;&lt;/h1&gt;&lt;link rel=&#34;stylesheet&#34; href=&#34;http://localhost:1313/js/wgo/wgo.player.css&#34;&gt;&#xD;&#xA;&#xD;&#xA;&lt;div&#xD;&#xA;  class=&#34;wgo-player&#34;&#xD;&#xA;  data-sgf=&#34;test&#34;&#xD;&#xA;  style=&#34;width:100%; max-width:600px;&#34;&gt;&#xD;&#xA;&lt;/div&gt;&#xD;&#xA;&#xD;&#xA;&lt;script src=&#34;http://localhost:1313/js/wgo/wgo.min.js&#34;&gt;&lt;/script&gt;&#xD;&#xA;&lt;script src=&#34;http://localhost:1313/js/wgo/wgo.player.min.js&#34;&gt;&lt;/script&gt;&#xD;&#xA;&#xD;&#xA;&lt;script&gt;&#xD;&#xA;function initWgoPlayers() {&#xD;&#xA;&#xD;&#xA;  document.querySelectorAll(&#34;.wgo-player&#34;).forEach(function (elem) {&#xD;&#xA;&#xD;&#xA;    if (elem.dataset.loaded) return;&#xD;&#xA;    elem.dataset.loaded = true;&#xD;&#xA;&#xD;&#xA;    var sgfName = elem.dataset.sgf;&#xD;&#xA;&#xD;&#xA;    new WGo.BasicPlayer(elem, {&#xD;&#xA;      sgfFile: &#34;/sgf/&#34; + sgfName + &#34;.sgf&#34;&#xD;&#xA;    });&#xD;&#xA;&#xD;&#xA;  });&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;document.addEventListener(&#34;DOMContentLoaded&#34;, initWgoPlayers);&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;document.addEventListener(&#34;pjax:complete&#34;, initWgoPlayers);&#xD;&#xA;&lt;/script&gt;&#xD;&#xA;&#xA;&lt;h1 id=&#34;棋譜終わり&#34;&gt;棋譜終わり&#xD;&#xA;&lt;/h1&gt;</description>
+            <guid>https://oishimugicha.github.io/mugicha-igo/post/test/</guid>
+            <description>&lt;h1 id=&#34;棋譜&#34;&gt;棋譜&#xD;&#xA;&lt;/h1&gt;&lt;link rel=&#34;stylesheet&#34; href=&#34;https://oishimugicha.github.io/mugicha-igo/js/wgo/wgo.player.css&#34;&gt;&#xD;&#xA;&#xD;&#xA;&lt;div&#xD;&#xA;  class=&#34;wgo-player&#34;&#xD;&#xA;  data-sgf=&#34;test&#34;&#xD;&#xA;  style=&#34;width:100%; max-width:600px;&#34;&gt;&#xD;&#xA;&lt;/div&gt;&#xD;&#xA;&#xD;&#xA;&lt;script src=&#34;https://oishimugicha.github.io/mugicha-igo/js/wgo/wgo.min.js&#34;&gt;&lt;/script&gt;&#xD;&#xA;&lt;script src=&#34;https://oishimugicha.github.io/mugicha-igo/js/wgo/wgo.player.min.js&#34;&gt;&lt;/script&gt;&#xD;&#xA;&#xD;&#xA;&lt;script&gt;&#xD;&#xA;function initWgoPlayers() {&#xD;&#xA;&#xD;&#xA;  document.querySelectorAll(&#34;.wgo-player&#34;).forEach(function (elem) {&#xD;&#xA;&#xD;&#xA;    if (elem.dataset.loaded) return;&#xD;&#xA;    elem.dataset.loaded = true;&#xD;&#xA;&#xD;&#xA;    var sgfName = elem.dataset.sgf;&#xD;&#xA;&#xD;&#xA;    new WGo.BasicPlayer(elem, {&#xD;&#xA;      sgfFile: &#34;/sgf/&#34; + sgfName + &#34;.sgf&#34;&#xD;&#xA;    });&#xD;&#xA;&#xD;&#xA;  });&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;document.addEventListener(&#34;DOMContentLoaded&#34;, initWgoPlayers);&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;document.addEventListener(&#34;pjax:complete&#34;, initWgoPlayers);&#xD;&#xA;&lt;/script&gt;&#xD;&#xA;&#xA;&lt;h1 id=&#34;棋譜終わり&#34;&gt;棋譜終わり&#xD;&#xA;&lt;/h1&gt;</description>
         </item></channel>
 </rss>

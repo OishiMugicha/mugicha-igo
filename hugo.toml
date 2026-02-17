@@ -1,4 +1,4 @@
-baseURL = 'https://example.org/'
+baseURL = 'https://oishimugicha.github.io/mugicha-igo'
 languageCode = 'ja'
 title = 'むぎちゃの囲碁道楽'
 theme = 'stack'
